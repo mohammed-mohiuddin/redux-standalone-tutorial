@@ -1,0 +1,24 @@
+{
+  "name": "redux-standalone-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test sepcified\" && exit 1",
+    "build": "webpack",
+    "start": "npm run open",
+    "open": "concurrently \"yarn build\" \"http-server -a localhost -p 1234\"  \"opener http://localhost:1234/dist/index.html\"",
+    "openComments": "concurrently is used to execute multiple commands at one place. Opner opens index.html in default browser"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "http-server": "^0.11.1",
+    "lodash": "^4.17.15",
+    "opener": "^1.5.1",
+    "redux": "^4.0.4"
+  }
+}
