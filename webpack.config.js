@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'production',
     entry: './src/index.js',  // dependency graph creation starts from index.js
     output: {
         filename: 'main.js',            // name of the bundled file(output) would be main.js
