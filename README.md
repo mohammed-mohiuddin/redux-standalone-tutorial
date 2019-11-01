@@ -9,6 +9,8 @@ Repository created to document understanding of redux as a standalone state cont
 
 2. Install the dependencies:
 
+### `cd redux-standalone-tutorial`
+
 ### `npm install`
 
 3. Open the html file:
